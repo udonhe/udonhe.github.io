@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+}
+#game-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+#typing-area {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#input-box {
+    font-size: 24px;
+    padding: 5px;
+    width: 300px;
+}
+#result-message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#reset-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}

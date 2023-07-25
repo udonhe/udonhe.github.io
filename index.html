@@ -1,64 +1,20 @@
 <!DOCTYPE html>
-
-<html lang="ja">
-
+<html lang="en">
 <head>
-    <!-- ファイルの文字コード -->
     <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ページ作成者 -->
-    <meta name="author" content="Osamu HASEGAWA">
-    <!-- ページ内容を表すキーワード（3〜5つくらい） -->
-    <meta name="keywords" content="javascript, 変数，配列，関数">
-
-    <!-- CSSとの紐付け．CSSへのパスは相対パスで記述する． -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-
-    <!-- タイトル -->
-    <title>第12回 JavaScript(じゃんけんプログラム)</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Simple Typing Game</title>
 </head>
-
 <body>
+    <div id="game-container">
+        <p id="typing-area">Please type the following text.</p>
+        <p id="question"></p>
+        <input type="text" id="input-box" autofocus>
+        <p id="result-message"></p>
+        <button id="reset-button">Reset</button>
+    </div>
+    <script src="./js/script.js"></script>
 
-    <!-- header: サイト共通のヘッダー情報（サイトタイトルとかナビゲーションとか） -->
-    <header>
-        <h1 id="top">コンピュータ・リテラシーⅡ</h1>
-
-        <!-- nav: 他のページへのリンクや，ページ内リンクをまとめたもの -->
-        <nav id="menu">
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">タグリファレンス</a></li>
-                <li><a href="#">問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h2>JavaScript（じゃんけんプログラム）</h2>
-        
-        <div>
-            <h3>課題解説:じゃんけんプログラム</h3>
-
-
-            <!-- HTMLからJavascriptの関数を実行する -->
-            <button type="button" onclick="janken(0)">グー</button>
-            <button type="button" onclick="janken(1)">チョキ</button>
-            <button type="button" onclick="janken(2)">パー</button>
-        </div>
-
-        <div>
-            <p id="janken-result">ここに勝ち負けが表示されます。</p>
-        </div>
-
-    </main>
-
-    <!-- 外部のJavaScriptファイルを読み込む場合 -->
-    <script src="./js/janken.js"></script>
-
-    <!-- JavaScriptは，bodyの閉じタグの直前に記述するのがセオリー -->
-    <!-- ↑の理由，ページの読み込み速度を向上させるため -->
 </body>
+</html>
